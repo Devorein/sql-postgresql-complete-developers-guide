@@ -1,4 +1,52 @@
 subject: Postgres
 topic: Calculated Columns
 questions:
-  - question: 
+  - question: Is it possible to transform/process data before receiving it from sql ?
+    answers: 0
+    options:
+      - Yes
+      - No
+  - question: Fetch the `c1/c2` data from table `t1`
+    answers: select c1/c2 from t1
+  - question: What is the advantage of preprocessing data before receiving it ?
+    answers: 0
+    type: MS
+    options:
+      - Faster to compute in raw sql than in the client side
+      - Less data needs to be transferred
+      - Query takes less time
+  - question: What is the disadvantage of preprocessing data before receiving it ?
+    answers: 0
+    type: MS
+    options:
+      - Query takes more time
+      - More data needs to be transferred
+      - Slower to compute in raw sql than in client side
+  - question: Which of the following arithmetic operators are available in sql ?
+    answers:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    options:
+      - /
+      - ^
+      - "|/"
+      - "@"
+      - "%"
+      - "//"
+      - "**"
+  - question: Which operator is used to get the absolute value ?
+    answers: "@"
+  - question: Which operator is used to get the square root ?
+    answers: "|/"
+  - question: Which operator is used to get the exponent ?
+    answers: ^
+  - question: |
+      Write the sql statement to:-
+
+      1. Get the computed result by using the absolute operator on column `c1`
+      2. Rename it as abs
+      3. From table `t1`
+    answers: select @c1 as abs from t1

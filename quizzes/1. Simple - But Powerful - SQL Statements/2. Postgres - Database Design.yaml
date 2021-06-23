@@ -1,4 +1,41 @@
 subject: Postgres
 topic: Database Design
 questions:
-  - question: 
+  - question: Which of the following questions should be asked while designing a database ?
+    answers:
+      - 0
+      - 1
+      - 2
+    options:
+      - What kind of thing are we storing
+      - What properties does this thing have ?
+      - What type of data does each of those properties contain ?
+  - question: A table stores ?
+    answers: 0
+    options:
+      - A collection of records
+      - A collection of databases
+      - A collection of documents
+      - A collection of schemas
+  - question: What is data stored in a database ?
+    answers: 0
+    options:
+      - Tables
+      - Record
+      - Document
+      - Schema
+  - question: |
+      For a table containing columns
+
+      1. Name
+      2. Country
+      3. Population
+      4. Area
+
+      What could be the correct data types for those columns ?
+    answers: 0
+    options:
+      - string, string, number, number
+      - string, string, string, number
+      - string, string, string, string
+  - question:

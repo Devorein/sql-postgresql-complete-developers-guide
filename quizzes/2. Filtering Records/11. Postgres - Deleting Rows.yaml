@@ -1,4 +1,21 @@
 subject: Postgres
 topic: Deleting Rows
 questions:
-  - question: 
+  - question: Which operators are used for the delete operation ?
+    answers: 0
+    options:
+      - "`delete`, `from`, `where`"
+      - "`delete`, `where`"
+      - "`from`, `where`"
+      - "`delete`, `from`"
+  - question: |
+      Write the sql code to
+
+      1. Remove rows from `t1`
+      2. Matching the condition `c1` is `1`
+    answers: delete from t1 where c1 = 1;
+  - question: Is it possible to delete a single row from a table ?
+    answers: 0
+    options:
+      - No
+      - Yes

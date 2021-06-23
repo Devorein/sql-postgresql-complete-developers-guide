@@ -1,4 +1,40 @@
 subject: Postgres
 topic: String Operators and Functions
 questions:
-  - question: 
+  - question: Which of the following are string operators available in sql ?
+    answers:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    options:
+      - "||"
+      - "CONCAT()"
+      - "LOWER()"
+      - "LENGTH()"
+      - "UPPER()"
+      - "JOIN()"
+  - question: Which operator is used to join two strings in sql ?
+    answers: "||"
+  - question: Which function is used to to add two strings together ?
+    answers:
+      - text: concat
+        modifiers:
+          - IC
+  - question: Which function is used to get the length of a string ?
+    answers:
+      - text: length
+        modifiers:
+          - IC
+  - question: |
+      Write the sql command for ?
+
+      1. Concatenated value of 
+        1. c1 transformed to uppercase
+        2. and c2 transformed to lowercase
+      2. Rename as conc
+      3. From table `t1`
+    answers:
+      - - select upper(c1)||lower(c2) as conc from t1
+        - select concat(upper(c1), lower(c2)) as conc from t1

@@ -28,9 +28,7 @@ questions:
       - 1
       - 2
       - 3
-      - 4
     options:
-      - /
       - ^
       - "|/"
       - "@"
@@ -47,6 +45,6 @@ questions:
       Write the sql statement to:-
 
       1. Get the computed result by using the absolute operator on column `c1`
-      2. Rename it as abs
+      2. Rename it as `abs`
       3. From table `t1`
     answers: select @c1 as abs from t1

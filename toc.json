@@ -1,0 +1,462 @@
+[
+  {
+    "name": "Simple - But Powerful - SQL Statements",
+    "topics": [
+      "What is PostgreSQL All About?",
+      "Database Design",
+      "Creating Tables",
+      "Analyzing CREATE TABLE",
+      "Inserting Data Into a Table",
+      "Retrieving Data with Select",
+      "Calculated Columns",
+      "Calculating Phone Revenue",
+      "Exercise Solution",
+      "String Operators and Functions"
+    ]
+  },
+  {
+    "name": "Filtering Records",
+    "topics": [
+      "Filtering Rows with \"Where\"",
+      "More on the \"Where\" Keyword",
+      "Compound \"Where\" Clauses",
+      "A \"Where\" Exercise Overview",
+      "A \"Where\" Solution",
+      "\"Where\" With Lists",
+      "A \"Where\" With Lists Solution",
+      "Calculations in \"Where\" Clauses",
+      "Solving Calculations",
+      "Updating Rows",
+      "Deleting Rows",
+      "A Solution for Updating Rows",
+      "Solution for Deleting Rows"
+    ]
+  },
+  {
+    "name": "Working with Tables",
+    "topics": [
+      "The Plan Moving Forward",
+      "Approaching Database Design",
+      "One-to-Many and Many-to-One Relationships",
+      "One-to-One and Many-to-Many Relationships",
+      "Primary Keys and Foreign Keys",
+      "Understanding Foreign Keys",
+      "Auto-Generated ID's",
+      "Creating Foreign Key Columns",
+      "Running Queries on Associated Data",
+      "Exercise Overview",
+      "Foreign Key Creation Solution",
+      "Foreign Key Constraints Around Insertion",
+      "Constraints Around Deletion",
+      "Testing Deletion Constraints",
+      "Setting Foreign Keys to Null on Delete",
+      "Adding Some Complexity"
+    ]
+  },
+  {
+    "name": "Relating Records with Joins",
+    "topics": [
+      "Queries with Joins and Aggregations",
+      "Joining Data from Different Tables",
+      "Another Quick Join",
+      "Exercise Overview",
+      "A Joinful Solution",
+      "Alternate Forms of Syntax",
+      "Missing Data in Joins",
+      "Why Wasn't It Included",
+      "Four Kinds of Joins",
+      "Each Join in Practice",
+      "Does Order Matter?",
+      "Exercise Overview",
+      "Two Possible Solutions",
+      "Where with Join",
+      "Three Way Joins",
+      "A Bit of Practice",
+      "Exercise Solution"
+    ]
+  },
+  {
+    "name": "Aggregation of Records",
+    "topics": [
+      "Aggregating and Grouping",
+      "Picturing Group By",
+      "Aggregate Functions",
+      "Combining Group By and Aggregates",
+      "A Gotcha with Count",
+      "Visualizing More Grouping",
+      "Exercise Overview",
+      "Grouping Solution",
+      "Adding a Layer of Difficulty",
+      "Solution",
+      "Filtering Groups with Having",
+      "Having In Action",
+      "More on Having!",
+      "A Having Exercise Overview",
+      "A Quick Solution"
+    ]
+  },
+  {
+    "name": "Working with Large Datasets",
+    "topics": [
+      "Investigating This Dataset",
+      "Some Group By Practice",
+      "Group By Review Solution",
+      "Remember Joins?",
+      "Of Course You Remember!"
+    ]
+  },
+  {
+    "name": "Sorting Records",
+    "topics": [
+      "The Basics of Sorting",
+      "Two Variations on Sorting",
+      "Offset and Limit",
+      "Exercise Overview",
+      "Exercise Solution"
+    ]
+  },
+  {
+    "name": "Unions and Intersections with Sets",
+    "topics": [
+      "Handling Sets with Union",
+      "A Few Notes on Union",
+      "Commonalities with Intersect",
+      "Removing Commonalities with Except",
+      "Union Exercise Overview",
+      "Exercise Solution"
+    ]
+  },
+  {
+    "name": "Assembling Queries with SubQueries",
+    "topics": [
+      "What's a Subquery?",
+      "Thinking About the Structure of Data",
+      "Subqueries in a Select",
+      "Exercise Overview",
+      "Select Solution",
+      "Subqueries in a From",
+      "From Subqueries that Return a Value",
+      "Example of a Subquery in a From",
+      "Exercise Overview",
+      "Exercise Solution",
+      "Subqueries in a Join Clause",
+      "More Useful - Subqueries with Where",
+      "Data Structure with Where Subqueries",
+      "Exercise Overview",
+      "Exercise Solution",
+      "The Not In Operator with a List",
+      "A New Where Operator",
+      "Finally Some!",
+      "Exercise Overview",
+      "A Quick Solution",
+      "Probably Too Much About Correlated Subqueries",
+      "More on Correlated Subqueries",
+      "A Select Without a From?",
+      "Exercise Overview",
+      "Exercise Solution"
+    ]
+  },
+  {
+    "name": "Selecting Distinct Records",
+    "topics": [
+      "Selecting Distinct Values",
+      "Exercise Overview",
+      "A Distinct Solution"
+    ]
+  },
+  {
+    "name": "Utility Operators, Keywords, and Functions",
+    "topics": [
+      "The Greatest Value in a List",
+      "And the Least Value in a List!",
+      "The Case Keyword"
+    ]
+  },
+  {
+    "name": "Local PostgreSQL Installation",
+    "topics": [
+      "PostgreSQL Installation on macOS",
+      "PGAdmin Setup on macOS",
+      "Postgres installation on Windows"
+    ]
+  },
+  {
+    "name": "PostgreSQL Complex Datatypes",
+    "topics": [
+      "What'd We Just Do?",
+      "Data Types",
+      "Fast Rules on Numeric Data Types",
+      "More on Number Data Types",
+      "Reminder on Character Types",
+      "Boolean Data Types",
+      "Times, Dates, and Timestamps",
+      "Really Awesome Intervals"
+    ]
+  },
+  {
+    "name": "Database-Side Validation and Constraints",
+    "topics": [
+      "Thinking About Validation",
+      "Creating and Viewing Tables in PGAdmin",
+      "Applying a Null Constraint",
+      "Solving a Gotcha with Null Constraints",
+      "Default Column Values",
+      "Applying a Unique Constraint to One column",
+      "Multi-Column Uniqueness",
+      "Adding a Validation Check",
+      "Checks Over Multiple Columns",
+      "So Where Are We Applying Validation?"
+    ]
+  },
+  {
+    "name": "Database Structure Design Patterns",
+    "topics": [
+      "Approaching More Complicated Designs",
+      "Using a SQL Design Tool",
+      "A Config-based Schema Designer",
+      "Here's the Plan",
+      "Rebuilding Some Schema"
+    ]
+  },
+  {
+    "name": "How to Build a 'Like' System",
+    "topics": [
+      "Requirements of a Like System",
+      "How Not to Design a Like System",
+      "Designing a Like System",
+      "Making a Reaction System Instead",
+      "Polymorphic Associations",
+      "Polymorphic Association Alternative Implementation",
+      "The Simplest Alternative",
+      "So Which Approach?"
+    ]
+  },
+  {
+    "name": "How to Build a 'Mention' System",
+    "topics": [
+      "Additional Features Around Posts",
+      "Adding Captions and Locations",
+      "Photo Mentions vs Caption Mentions",
+      "Considerations on Photo Tags vs Caption Tags",
+      "Update For Tags"
+    ]
+  },
+  {
+    "name": "How to Build a 'Hashtag' System",
+    "topics": [
+      "Designing a Hashtag System",
+      "Tables for Hashtags",
+      "Including the Hashtag Table",
+      "A Few More User Columns",
+      "Why No Number of Followers or Posts?"
+    ]
+  },
+  {
+    "name": "How to Design a 'Follower' System",
+    "topics": [
+      "Designing a Follower System"
+    ]
+  },
+  {
+    "name": "Implementing Database Design Patterns",
+    "topics": [
+      "Back to Postgres",
+      "Creating Tables with Checks",
+      "Posts Creation",
+      "Comments Creation",
+      "Likes Creation",
+      "Photo Tags and Caption Tags",
+      "Creating Hashtags, Hashtag Posts, and Followers"
+    ]
+  },
+  {
+    "name": "Approaching and Writing Complex Queries",
+    "topics": [
+      "Adding Some Data",
+      "Restoring from Scratch",
+      "Highest User ID's Exercise",
+      "Solution for User ID's",
+      "Posts by a Particular User",
+      "Solving for Posts by User",
+      "Likes Per User",
+      "Solution for Likes Per User"
+    ]
+  },
+  {
+    "name": "Understanding the Internals of PostgreSQL",
+    "topics": [
+      "Thinking About Performance",
+      "Where Does Postgres Store Data?",
+      "Heaps, Blocks, and Tuples",
+      "Block Data Layout",
+      "Heap File Layout"
+    ]
+  },
+  {
+    "name": "A Look at Indexes for Performance",
+    "topics": [
+      "Full Table Scans",
+      "What's an Index",
+      "How an Index Works",
+      "Creating an Index",
+      "Benchmarking Queries",
+      "Downsides of Indexes",
+      "Index Types",
+      "Automatically Generated Indexes",
+      "Behind the Scenes of Indexes"
+    ]
+  },
+  {
+    "name": "Basic Query Tuning",
+    "topics": [
+      "The Query Processing Pipeline",
+      "Explain and Explain Analyze",
+      "Solving an Explain Mystery"
+    ]
+  },
+  {
+    "name": "Advanced Query Tuning",
+    "topics": [
+      "Developing an Intuitive Understanding of Cost",
+      "Calculating Cost by Hand",
+      "A Touch More on Costs",
+      "Startup vs Total Costs",
+      "Costs Flow Up",
+      "Use My Index!"
+    ]
+  },
+  {
+    "name": "Simple Common Table Expressions",
+    "topics": [
+      "Common Table Expressions",
+      "A Quick Solution",
+      "So What's a CTE?"
+    ]
+  },
+  {
+    "name": "Recursive Common Table Expressions",
+    "topics": [
+      "Recursive CTE's",
+      "Recursive CTE's Step by Step",
+      "Why Use Recursive CTE's?",
+      "Writing the Query",
+      "Walking Through Recursion"
+    ]
+  },
+  {
+    "name": "Simplifying Queries with Views",
+    "topics": [
+      "Most Popular Users",
+      "A Possible Solution for Merging Tables",
+      "Creating a View",
+      "When to Use a View?",
+      "Deleting and Changing Views"
+    ]
+  },
+  {
+    "name": "Optimizing Queries with Materialized Views",
+    "topics": [
+      "Materialized Views",
+      "Grouping by Week",
+      "Reminder on Left Joins",
+      "Writing a Slow Query",
+      "Creating and Refreshing Materialized Views"
+    ]
+  },
+  {
+    "name": "Handling Concurrency and Reversibility with Transactions",
+    "topics": [
+      "What are Transactions Used For?",
+      "Some Sample Data",
+      "Opening and Closing Transactions",
+      "Transaction Cleanup on Crash",
+      "Closing Aborted Transactions"
+    ]
+  },
+  {
+    "name": "Managing Database Design with Schema Migrations",
+    "topics": [
+      "A Story on Migrations",
+      "Migration Files",
+      "Issues Solved by Migrations",
+      "A Few Notes on Migrations Libraries",
+      "Project Creation",
+      "Generating and Writing Migrations",
+      "Applying and Reverting Migrations",
+      "Generating and Applying a Second Migration"
+    ]
+  },
+  {
+    "name": "Schema vs Data Migrations",
+    "topics": [
+      "Schema vs Data Migrations",
+      "Dangers Around Data Migrations",
+      "Properly Running Data and Schema Migrations",
+      "Creating a Posts Table",
+      "A Small Web Server",
+      "Adding the Loc Column",
+      "Writing Values to Both Columns",
+      "Transaction Locks",
+      "Updating Values",
+      "Updating the App Server",
+      "Dropping the Last Columns"
+    ]
+  },
+  {
+    "name": "Accessing PostgreSQL From API's",
+    "topics": [
+      "Section Goal",
+      "Initial Setup",
+      "One Fast Migration",
+      "Building the Users Router",
+      "Understanding Connection Pools",
+      "Validating Connection Credentials",
+      "Query and Close"
+    ]
+  },
+  {
+    "name": "Data Access Pattern - Repositories",
+    "topics": [
+      "The Repository Pattern",
+      "Creating a Repository",
+      "Accessing the API",
+      "Casing Issues",
+      "Fixing Casing",
+      "Finding Particular Users"
+    ]
+  },
+  {
+    "name": "Security Around PostgreSQL",
+    "topics": [
+      "SQL Injection Exploits",
+      "Handling SQL Injection with Prepared Statements",
+      "Preventing SQL Injection",
+      "Reminder on Post Requests",
+      "Inserting Users",
+      "Handling Updates",
+      "And, Finally, Delete"
+    ]
+  },
+  {
+    "name": "Fast Parallel Testing",
+    "topics": [
+      "A Note on Testing",
+      "Assertions Around User Count",
+      "Connecting to a DB For Tests",
+      "Disconnecting After Tests",
+      "Multi-DB Setup",
+      "Assumptions Around Content",
+      "Issues with Parallel Tests",
+      "Isolation with Schemas",
+      "Creating and Accessing Schemas",
+      "Controlling Schema Access with Search Paths",
+      "Routing Schema Access",
+      "Strategy for Isolation",
+      "Programmatic Schema Creation",
+      "Escaping Identifiers",
+      "Test Helpers",
+      "Cleaning up Schemas and Roles",
+      "Finally... Parallel Tests!"
+    ]
+  }
+]

@@ -1,4 +1,44 @@
 subject: Postgres
 topic: Inserting Data Into a Table
 questions:
-  - question: 
+  - question: Which keyword is used to insert records into a table ?
+    answers: insert into
+  - question: Which quote is used to indicate a string literal ?
+    answers: 0
+    options:
+      - "'' Single quotes"
+      - \"\" Double Quotes
+      - \"\"\" Triple Quotes
+      - "`` Backtics"
+  - question: |
+      Insert the following record into the table `t1`, which has columns `c1` and `c2`
+
+      1. 'val1', 1
+      2. 'val2', 2
+    answers:
+      - text: ""
+        regex:
+          - regex: insert into t1 \(\s?c1,\s?c2\s?\) values \(\s?'val1'\s?,\s?1\)\s?,\s?\(\s?'val2'\s?,\s?2\s?\);?
+  - question: Which of the following sql statements would work ?
+    answers: 0
+    options:
+      - |
+        ```sql
+        insert into cities (name, area)
+        values ('Tokyo', 123)
+        ```
+      - |
+        ```sql
+        insert into cities (name, area)
+        values (123, 'Tokyo')
+        ```
+      - |
+        ```sql
+        insert into cities (name, area)
+        values (123, 123)
+        ```
+      - |
+        ```sql
+        insert into cities (name, area)
+        values ('Tokyo', 'Tokyo')
+        ```

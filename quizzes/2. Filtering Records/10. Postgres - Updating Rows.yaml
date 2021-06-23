@@ -1,4 +1,32 @@
 subject: Postgres
 topic: Updating Rows
 questions:
-  - question: 
+  - question: Which keywords are used for updating rows ?
+    answers: 0
+    options:
+      - update, set, where
+      - select, set, where
+      - delete, set, where
+      - update, from, where
+  - question: |
+      Write the sql code for
+
+      1. Updating the rows from table `t1`
+      2. Change `c1` to `2`
+      3. Only where `c2` is not `'a'`
+
+    answers: update t1 set c1 = 2 where c2 != 'a';
+  - question: What is order of command execution for the update operation ?
+    answers: 0
+    options:
+      - update, where, set
+      - set, where, update
+      - where, set, update
+      - update, set, where
+  - question: What is the syntax of the set operator ?
+    answers: 0
+    options:
+      - "`SET <column> = <new value>`"
+      - "`SET <new value> = <column>`"
+      - "`SET <column> <new value>`"
+      - "`SET <new value> <column>`"

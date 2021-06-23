@@ -1,4 +1,24 @@
 subject: Postgres
 topic: Creating Tables
 questions:
-  - question: 
+  - question: Which datatype is used to indicate a text of variable length ?
+    answers:
+      text: varchar
+      modifiers:
+        - IC
+  - question: Which datatype is used to store integer value ?
+    answers:
+      - text: integers
+        modifiers:
+          - IC
+  - question: |
+      Write a sql statement to
+
+      1. Create a table called `ts`
+      2. With two columns
+        1. a which stores integer number
+        2. b which stores text of max length 50
+    answers:
+      - text: ""
+        regex:
+          regex: create\s?table\s?ts\s?\(\s?a integer,\s?b varchar\(50\)\s?\);?

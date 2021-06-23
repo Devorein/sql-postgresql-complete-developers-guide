@@ -1,4 +1,24 @@
 subject: Postgres
 topic: Analyzing CREATE TABLE
 questions:
-  - question: 
+  - question: Which keyword is used to create a table ?
+    answers: create table
+  - question: Create a table named `cities`
+    answers: create table cities
+  - question: Are identifiers in postgres always written out in lowercase letters ?
+    answers: 0
+    options:
+      - Yes
+      - No
+  - question: What is the limit of characters a `varchar(50)` datatype can hold ?
+    answers: 50
+  - question: Which datatype would be the best to store `1`
+    answers: integer
+  - question: What is the range of `integer` datatype ?
+    answers: 0
+    options:
+      - -2,147,483,647 to 2,147,483,647
+      - -2,147,483,645 to 2,147,483,645
+      - -2,147,483,256 to 2,147,483,256
+      - -2,147,483,512 to 2,147,483,512
+  - question:

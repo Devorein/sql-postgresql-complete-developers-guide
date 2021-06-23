@@ -1,0 +1,30 @@
+subject: Postgres
+topic: What is Postgres all about
+questions:
+  - question: What best describes sql ?
+    answers: 0
+    options:
+      - A database communication language
+      - A database
+      - A database management system
+  - question: Which of the following databases can be interacted via sql ?
+    answers:
+      - 0
+      - 1
+      - 2
+    options:
+      - Postgresql
+      - MySql
+      - Oracle
+      - Mongodb
+      - Redis
+  - question: Does postgres follow a schema ?
+    answers: 0
+    options:
+      - Yes
+      - No
+  - question: Is the language syntax used to interact with sql based database same for all ?
+    answers: 0
+    options:
+      - No
+      - Yes

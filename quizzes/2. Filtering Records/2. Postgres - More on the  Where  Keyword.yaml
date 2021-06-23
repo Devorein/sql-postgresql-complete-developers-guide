@@ -1,4 +1,47 @@
 subject: Postgres
-topic: More on the "Where" Keyword
+topic: More on the Where Keyword
 questions:
-  - question: 
+  - question: Which of the following operators are available in sql for filtering?
+    answers:
+      - 0
+      - 1
+      - 2
+      - 3
+    options:
+      - "<>"
+      - "!="
+      - between
+      - in
+      - ===
+      - "/><"
+  - question: Select the list operators
+    answers:
+      - 0
+      - 1
+    options:
+      - in
+      - not in
+      - exclude
+      - include
+      - any
+      - some
+  - question: Which operator is used to check if a value is present in a list ?
+    answers: in
+  - question: Which operator is used to check if a value is not present in a list ?
+    answers: not in
+  - question: Which of the following operators does the same thing as "<>"
+    answers:
+      text: 0
+      explanation: "<> and != checks if the values are not equal"
+    type: MS
+    options:
+      - "!="
+      - "/><"
+      - ==
+      - ===
+  - question: Write the operator to check if a value is within a range
+    answers: between
+  - question: Get column `c1` from table `t1`, where its value is equal to `40`
+    answers: select c1 from t1 where c1 = 40;
+  - question: Which operator is used as equal operator ?
+    answers: "="

@@ -83,3 +83,52 @@ questions:
       - NOT
       - XOR
       - NAND
+  - question: |
+      Which of the following sql statements is equal to the following
+
+      ```sql
+      select c1 from t1 where c2 in ('s1', 's2');
+      ```
+
+    answers: 0
+    options:
+      - |
+        ```sql
+        select c1 from t1 where c2 = 's1' or c2 = 's2';
+        ```
+      - |
+        ```sql
+        select c1 from t1 where c2 = 's1' and c2 = 's2';
+        ```
+      - |
+        ```sql
+        select c1 from t1 where c2 != 's1' or c2 != 's2';
+        ```
+      - |
+        ```sql
+        select c1 from t1 where c2 != 's1' and c2 != 's2';
+        ```
+  - question: |
+      Which of the following sql statements is equal to the following
+
+      ```sql
+      select c1 from t1 where c2 not in ('s1', 's2');
+      ```
+    answers: 0
+    options:
+      - |
+        ```sql
+        select c1 from t1 where c2 != 's1' and c2 != 's2';
+        ```
+      - |
+        ```sql
+        select c1 from t1 where c2 != 's1' or c2 != 's2';
+        ```
+      - |
+        ```sql
+        select c1 from t1 where c2 = 's1' or c2 = 's2';
+        ```
+      - |
+        ```sql
+        select c1 from t1 where c2 = 's1' and c2 = 's2';
+        ```

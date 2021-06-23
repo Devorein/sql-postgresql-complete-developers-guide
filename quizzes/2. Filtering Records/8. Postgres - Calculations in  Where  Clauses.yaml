@@ -1,4 +1,24 @@
 subject: Postgres
-topic: Calculations in "Where" Clauses
+topic: Calculations in Where Clauses
 questions:
-  - question: 
+  - question: |
+      Write the sql code to
+
+      1. Get the computed column `c1/c2`
+      2. Rename as `comp`
+      3. From table `t1`
+      4. Filter by condition that 
+        * `c1/c2` is less than 4
+    answers: select c1/c2 as comp from t1 where c1/c2 < 4;
+  - question: |
+      Is the following sql code valid ?
+
+      ```sql
+      select c1/c2 as comp from t1 where comp > 4;
+      ```
+    answers:
+      text: 0
+      explanation: Computed column alias cannot be used inside the where clause
+    options:
+      - No
+      - Yes

@@ -13,8 +13,8 @@ questions:
   - question: |
       Insert the following record into the table `t1`, which has columns `c1` and `c2`
 
-      1. 'val1', 1
-      2. 'val2', 2
+      1. `val1`, `1`
+      2. `val2`, `2`
     answers:
       - text: ""
         regex:

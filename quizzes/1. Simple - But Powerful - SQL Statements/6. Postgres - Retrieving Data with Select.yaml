@@ -1,4 +1,21 @@
 subject: Postgres
 topic: Retrieving Data with Select
 questions:
-  - question: 
+  - question: Write the sql statement to get all data from the `t1` table
+    answers: select * from t1
+  - question: Write the sql statement to get `c1` and `c3` columns from the `t1` table
+    answers:
+      - - select c1, c3 from t1
+        - select c3, c1 from t1
+  - question: |
+      Is the following sql valid ?
+
+      ```sql
+      select c1, c1 from t1
+      ```
+    answers:
+      text: 0
+      explanation: Same column can be present multiple times in a select clause
+    options:
+      - Yes
+      - No

@@ -1,4 +1,25 @@
 subject: Postgres
 topic: Filtering Rows with "Where"
 questions:
-  - question: 
+  - question: |
+      Write the sql statement for
+
+      1. Get `c1` column
+      2. From `t1` table
+      3. with the condition that `c1` is less than 10
+    answers: select c1 from t1 where c1 < 10;
+  - question: |
+      In the following sql statement
+
+      ```sql
+      select name, area from cities where area > 4000;
+      ```
+
+      what is the correct order of reading the statements ?
+    answers: 0
+    options:
+      - from, where, select
+      - select, from, where
+      - select, where, from
+  - question: Which keyword is used to start a condition clause ?
+    answers: where

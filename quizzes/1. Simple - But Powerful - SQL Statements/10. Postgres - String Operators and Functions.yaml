@@ -31,9 +31,9 @@ questions:
       Write the sql command for ?
 
       1. Concatenated value of 
-        1. c1 transformed to uppercase
-        2. and c2 transformed to lowercase
-      2. Rename as conc
+        *. `c1` transformed to uppercase
+        *. and `c2` transformed to lowercase
+      2. Rename as `conc`
       3. From table `t1`
     answers:
       - - select upper(c1)||lower(c2) as conc from t1

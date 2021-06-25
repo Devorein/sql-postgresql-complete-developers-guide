@@ -1,4 +1,41 @@
 subject: Postgres
 topic: Constraints Around Deletion
 questions:
-  - question: 
+  - question: Does an id ever get reused when using a serial data type ?
+    answers: 0
+    options:
+      - No
+      - Yes
+  - question: Which keyword is used to throw an error when a record that is a foreign key in another table is deleted ?
+    answers:
+      - - on delete restrict
+        - on delete no action
+  - question: Which keyword is used to delete the referenced record when a record that is a foreign key in another table is deleted ?
+    answers: on delete cascade
+  - question: Which keyword is used to set the record's referenced column to null when a record that is a foreign key in another table is deleted ?
+    answers: on delete set null
+  - question: Which keyword is used to set the record's referenced column to a default value when a record that is a foreign key in another table is deleted ?
+    answers: on delete set default
+  - question: Which of the following delete options does the same thing ?
+    answers:
+      - 0
+      - 1
+    options:
+      - on delete restrict
+      - on delete no action
+      - on delete cascade
+      - on delete set null
+      - on delete set default
+  - question: By default which of the following delete option is used ?
+    answers: 0
+    options:
+      - on delete restrict
+      - on delete no action
+      - on delete cascade
+      - on delete set null
+      - on delete set default
+  - question: Does postgres provides an option to specify a default value for a column ?
+    answers: 0
+    options:
+      - Yes
+      - No

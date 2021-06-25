@@ -1,4 +1,43 @@
 subject: Postgres
 topic: Understanding Foreign Keys
+contexts:
+  - A user can have many photos and comments, a photo can have many comments.
 questions:
-  - question: 
+  - question: Can many row in the table have the same foreign key ?
+    answers: 0
+    options:
+      - Yes
+      - No
+  - question: Which of the following table would contain two foreign keys ?
+    contexts: 0
+    answers: 0
+    options:
+      - comments
+      - photos
+      - users
+  - question: Which of the following table would contain no foreign keys ?
+    contexts: 0
+    answers: 0
+    options:
+      - users
+      - comments
+      - photos
+  - question: Which of the following table would contain one foreign keys ?
+    contexts: 0
+    answers: 0
+    options:
+      - photos
+      - users
+      - comments
+  - question: Does the primary key of a record ever changes ?
+    answers: 0
+    options:
+      - No
+      - Yes
+  - question: Does the foreign key of a record ever changes ?
+    answers:
+      text: 0
+      explanation: If the relationship between the two table changes, the foreign key will also change.
+    options:
+      - Yes
+      - No

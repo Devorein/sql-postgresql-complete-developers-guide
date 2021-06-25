@@ -1,4 +1,62 @@
 subject: Postgres
 topic: Running Queries on Associated Data
+contexts:
+  - |
+    `comment` table
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>content</th>
+          <th>user_id</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>a</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>b</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>c</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>d</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>e</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>f</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
 questions:
-  - question: 
+  - question: |
+      Write the sql code for the following
+
+      1. Get the `content` column
+      2. created by user id 4
+    answers: select content from comment where user_id = 4;
+    contexts: 0
+  - question: |
+      Write the sql code for the following
+
+      1. Create a new record in the `comment` table
+      2. Made by user with id 3
+      3. With content of g
+    answers: insert into comment(content, user_id) values('g', 3);
+    contexts: 0

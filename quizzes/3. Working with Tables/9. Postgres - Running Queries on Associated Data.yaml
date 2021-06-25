@@ -49,14 +49,14 @@ questions:
       Write the sql code for the following
 
       1. Get the `content` column
-      2. created by user id 4
+      2. created by user id `4`
     answers: select content from comment where user_id = 4;
     contexts: 0
   - question: |
       Write the sql code for the following
 
       1. Create a new record in the `comment` table
-      2. Made by user with id 3
-      3. With content of g
+      2. Made by user with id `3`
+      3. With content of `'g'`
     answers: insert into comment(content, user_id) values('g', 3);
     contexts: 0

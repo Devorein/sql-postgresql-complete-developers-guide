@@ -1,4 +1,29 @@
 subject: Postgres
 topic: Foreign Key Constraints Around Insertion
 questions:
-  - question: 
+  - question: What will happen if the foreign key references an id that doesn't exist ?
+    answers: 0
+    options:
+      - An error
+      - The row doesn't get added
+      - The row gets added
+  - question: What sort of error is thrown if a foreign key references an id that doesn't exist ?
+    answers:
+      - 0
+      - 1
+    options:
+      - Foreign key Constraints
+      - Unknown reference
+      - Duplicate key Constraints
+      - Unknown index reference
+  - question: Which value can be used in the foreign key column which wont throw an error and wont reference any particular record ?
+    answers: "null"
+  - question: If the ids `1` and `2` exists in the `t1` table, which of the following values will throw an error when used as foreign key for table `t2` that references `t1`
+    answers:
+      text: 0
+      explanation: Since the user with id `3` doesn't exist, a foreign key constraint error will be thrown.
+    options:
+      - "`3`"
+      - "`null`"
+      - "`1`"
+      - "`2`"

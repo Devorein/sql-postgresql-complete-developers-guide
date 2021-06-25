@@ -1,0 +1,37 @@
+subject: Postgres
+topic: One-to-One and Many-to-Many Relationships
+questions:
+  - question: What sort of relation does a country and its capital have ?
+    answers: 0
+    options:
+      - One to One
+      - One to many
+      - Many to many
+      - Many to one
+  - question: What sort of relation does a driver and his driver's license have ?
+    answers: 0
+    options:
+      - One to One
+      - One to many
+      - Many to many
+      - Many to one
+  - question: What sort of relation does players and matches have ?
+    answers:
+      text: 0
+      explanation: A player can play in multiple matches, and a match can have many players
+    options:
+      - Many to many
+      - One to One
+      - One to many
+      - Many to one
+  - question: Which of the following are examples of many to many relation ?
+    answers:
+      - 0
+      - 1
+      - 2
+    options:
+      - Students and Classes
+      - Tasks and engineers
+      - Movies and actors
+      - Company and employees
+      - Boat and captain

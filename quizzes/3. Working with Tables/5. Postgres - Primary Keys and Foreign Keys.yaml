@@ -1,4 +1,37 @@
 subject: Postgres
 topic: Primary Keys and Foreign Keys
 questions:
-  - question: 
+  - question:
+      - ""
+      - key helps to uniquely identify a
+      - in a
+      - .
+    answers:
+      - primary
+      - - record
+        - row
+      - table
+  - question: Is giving a primary key absolutely necessary while creating a table ?
+    answers: 0
+    options:
+      - No
+      - Yes
+  - question: Are primary keys unique ?
+    answers: 0
+    options:
+      - Yes
+      - No
+  - question: Which of the following is required to set up a relationship between two different table ?
+    answers: 0
+    options:
+      - Foreign key
+      - Secondary key
+      - Primary Key
+      - Index key
+  - question: If a user has many photos, in which table will the foreign key be stored ?
+    answers:
+      text: 0
+      explanation: The above relationship is a one to many relationship, which from the perspective of photo its many to one, the foreign key for a one to many relationship always exists on the many to one table.
+    options:
+      - photos
+      - users

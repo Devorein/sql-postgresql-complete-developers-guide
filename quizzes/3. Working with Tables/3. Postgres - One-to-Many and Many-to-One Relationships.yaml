@@ -1,4 +1,19 @@
 subject: Postgres
 topic: One-to-Many and Many-to-One Relationships
 questions:
-  - question: 
+  - question: How many types of relations are there in sql database ?
+    answers: 4
+  - question: A user has many photos. What sort of relationship is that ?
+    answers: 0
+    options:
+      - One to many
+      - One to one
+      - Many to many
+      - Many to one
+  - question: Many photo can belong to one user. What sort of relationship is that ?
+    answers: 0
+    options:
+      - Many to one
+      - One to one
+      - One to many
+      - Many to many

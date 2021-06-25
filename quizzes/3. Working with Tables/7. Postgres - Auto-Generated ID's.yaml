@@ -1,4 +1,22 @@
 subject: Postgres
 topic: Auto-Generated ID's
 questions:
-  - question: 
+  - question: Which data type is used to primary key ?
+    answers: serial
+  - question: Does postgres auto increment serial data type ?
+    answers: 0
+    options:
+      - Yes
+      - No
+  - question: What is the starting value of serial data type ?
+    answers: 1
+  - question: Which keyword is used to mark a column as the primary key ?
+    answers: primary key
+  - question: |
+      Write the sql code for the following
+
+      1. Create a table `t1`
+      2. Having columns
+        * id which is a primary key
+        * name which will contain integer
+    answers: create table t1 (id serial primary key, name integer);

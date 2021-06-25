@@ -1,4 +1,17 @@
 subject: Postgres
 topic: Creating Foreign Key Columns
 questions:
-  - question: 
+  - question: Which data type is used to store foreign key ?
+    answers: integer
+  - question: |
+      Write the sql code for the following
+
+      1. Create a foreign key
+      2. name it `c1`
+      3. That references the `id` column of table `p1`
+    answers: c1 integer references p1(id)
+  - question: Does marking a column as foreign ensures data consistency ?
+    answers: 0
+    options:
+      - Yes
+      - No

@@ -1,4 +1,45 @@
 subject: Postgres
 topic: Joining Data from Different Tables
+default:
+  difficulty: Advanced
 questions:
-  - question: 
+  - question: |
+      Write the sql code for the following ?
+
+      1. For each `comment`, show the `contents` of the `comment`
+      2. And the `username` of the `user` who created the comment
+      3. Do not use aliases
+    hints:
+      - The foreign key is `user_id`
+      - The tables are `users` and `comments`
+    answers: select contents, username from comments join users on comments.user_id = users.id;
+  - question: |
+      Write the sql code for the following ?
+
+      1. For each `comment`, show the `contents` of the `comment`
+      2. And the `username` of the `user` who created the comment
+      3. Use the alias `c` for comment and `u` for user
+    hints:
+      - The foreign key is `user_id`
+      - The tables are `users` and `comments`
+    answers: select c.contents, u.username from comments as c join users as u on c.user_id = u.id;
+  - question: Which of the following is the correct execution order of sql query ?
+    answers: 0
+    options:
+      - from, join, select
+      - join, from, select
+      - select, join, from
+      - select, from, join
+      - join, select, from
+    difficulty: Beginner
+  - question: |
+      Write the sql code to
+
+      1. Join the `users` table with `comments` table
+      2. No alias is used
+    answers:
+      - - join users on users.id = comments.user_id
+        - join users on comments.user_id = users.id
+    hints:
+      - "`comments` table contains the foreign key"
+      - "`users` table has the column `id` and `comments` table has the column `user_id`"

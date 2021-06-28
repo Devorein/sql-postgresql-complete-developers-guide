@@ -1,4 +1,38 @@
 subject: Postgres
 topic: Queries with Joins and Aggregations
 questions:
-  - question: 
+  - question: If photo is related to a user, which of the following would be the appropriate name of an foreign key column ?
+    answers: 0
+    options:
+      - "`user_id`"
+      - "`users_id`"
+      - "`user_ids`"
+      - "`users_ids`"
+  - question: Which of the following operations merges multiple rows together from different tables ?
+    answers: 0
+    options:
+      - Joins
+      - Aggregations
+      - SubQuery
+  - question: Which of the following operations generates a single value ?
+    answers: 0
+    options:
+      - Aggregations
+      - Joins
+      - SubQuery
+  - question: |
+      Find all the comments of the post, where its id = 3 and get the username of the author
+
+      Which of the following operations would resolve this question ?
+    answers: 0
+    options:
+      - Joins
+      - Aggregations
+  - question: |
+      Find all total number of comments for post, where its id = 3
+
+      Which of the following operations would resolve this question ?
+    answers: 0
+    options:
+      - Aggregations
+      - Joins

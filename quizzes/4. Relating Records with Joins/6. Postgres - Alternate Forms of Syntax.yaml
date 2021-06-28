@@ -1,4 +1,25 @@
 subject: Postgres
 topic: Alternate Forms of Syntax
 questions:
-  - question: 
+  - question: What will happen if a duplicate column is referenced in a select statement using joins ?
+    answers: 0
+    options:
+      - Error
+      - Returns the column of the `FROM` table
+      - Returns the column of the `JOIN` table
+  - question: Which error is thrown when a duplicate column is referenced in a select statement ?
+    answers: 0
+    options:
+      - Column reference is ambiguous
+      - Column reference is duplicated
+      - Duplicate column referenced
+      - Ambiguous column referenced
+  - question: Get the `c1` column from table `t1` and alias it as t1c1
+    answers: t1.c1 as t1c1
+  - question: Can a table be aliased ?
+    answers:
+      text: 0
+      explanation: Aliasing a table can be done in the same process as that of a column, using the `AS` keyword
+    options:
+      - Yes
+      - No

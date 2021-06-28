@@ -1,4 +1,21 @@
 subject: Postgres
 topic: Testing Deletion Constraints
 questions:
-  - question: 
+  - question: Which keywords are used to delete a table from a database ?
+    answers: drop table
+  - question: Delete the table `t1`
+    answers: drop table t1;
+  - question: |
+      Write the sql code for
+
+      1. A column named c1
+      2. Which is a foreign key
+      3. References the `c1` column of table `t1`
+      4. Set a delete mode, which will delete this row, whenever the associated foreign key is deleted
+    answers: c1 integer references t1(c1) on delete cascade
+  - question: What sort of deletion constraints would be the best for a post and comment relation ?
+    answers: 0
+    options:
+      - Cascade
+      - Set Null
+      - Error

@@ -1,4 +1,40 @@
 subject: Postgres
 topic: Each Join in Practice
 questions:
-  - question: 
+  - question: |
+      Write the sql code
+
+      1. To get the url of the photo 
+      2. username of the user
+      3. return photos even if an associated user doesn't exist
+      4. Without using alias
+    answers:
+      - - select url, username from photos left join users on users.id = photos.user_id;
+        - select url, username from photos left join users on photos.user_id = users.id;
+        - select url, username from users right join photos on photos.user_id = users.id;
+        - select url, username from users right join photos on users.id = photos.user_id;
+  - question: |
+      Write the sql code
+
+      1. To get the url of the photo 
+      2. username of the user
+      3. return user even if that user doesn't have any photos
+      4. Without using alias
+    answers:
+      - - select url, username from photos right join users on users.id = photos.user_id;
+        - select url, username from photos right join users on photos.user_id = users.id;
+        - select url, username from users left join photos on photos.user_id = users.id;
+        - select url, username from users left join photos on users.id = photos.user_id;
+  - question: |
+      Write the sql code
+
+      1. To get the url of the photo 
+      2. username of the user
+      3. return user even if that user doesn't have any photos
+      4. return photos even if an associated user doesn't exist
+      5. Without using alias
+    answers:
+      - - select url, username from photos full join users on users.id = photos.user_id;
+        - select url, username from photos full join users on photos.user_id = users.id;
+        - select url, username from users full join photos on photos.user_id = users.id;
+        - select url, username from users full join photos on users.id = photos.user_id;

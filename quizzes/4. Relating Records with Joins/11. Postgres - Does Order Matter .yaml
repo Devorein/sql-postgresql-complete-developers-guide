@@ -1,4 +1,92 @@
 subject: Postgres
-topic: Does Order Matter?
+topic: Operand tables of from and join statements
 questions:
-  - question: 
+  - question: Does the operand tables of `from` and `join` matter ?
+    answers: 0
+    options:
+      - Yes
+      - No
+  - question: In which of the following joins does order not matter ?
+    answers:
+      - 0
+      - 1
+    options:
+      - Outer join
+      - Inner join
+      - Left join
+      - Right join
+  - question: In which of the following joins does order matter ?
+    answers:
+      - 0
+      - 1
+    options:
+      - Left join
+      - Right join
+      - Outer join
+      - Inner join
+  - question: |
+      ```sql
+      select url, username from photos 
+      left join users 
+      on users.id = photos.user_id;
+      ```
+
+      In which of the following table will all the records be fetched all the time ?
+    answers:
+      - text: 0
+        explanation: Since the from statement is on the `photos` table, thus all the records of this table will be fetched even if there is no corresponding `user_id` matches
+    options:
+      - "`photos`"
+      - "`users`"
+  - question: |
+      ```sql
+      select url, username from users 
+      left join photos 
+      on users.id = photos.user_id;
+      ```
+
+      In which of the following table will all the records be fetched all the time ?
+    answers:
+      - text: 0
+        explanation: Since the from statement is on the `users` table, thus all the records of this table will be fetched even if there is no corresponding `id` matches
+    options:
+      - "`users`"
+      - "`photos`"
+  - question: |
+      ```sql
+      select url, username from users 
+      left join photos 
+      on users.id = photos.user_id;
+      ```
+
+      ```sql
+      select url, username from users 
+      left join photos 
+      on photos.user_id = users.id;
+      ```
+      Are these two sql code equal ?
+    answers:
+      - text: 0
+        explanation: The operands of the equal operator doesn't matter
+    options:
+      - Yes
+      - No
+  - question: |
+      ```sql
+      select url, username from photos 
+      left join users 
+      on users.id = photos.user_id;
+      ```
+
+      ```sql
+      select url, username from users 
+      left join photos 
+      on photos.user_id = users.id;
+      ```
+      Are these two sql code equal ?
+    answers:
+      - text: 0
+        explanation: The order of the `from` and `join` table matters when doing a left join
+    options:
+      - No
+      - Yes

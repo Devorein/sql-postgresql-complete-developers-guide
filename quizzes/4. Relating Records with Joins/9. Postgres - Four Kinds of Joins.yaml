@@ -1,4 +1,79 @@
 subject: Postgres
 topic: Four Kinds of Joins
 questions:
-  - question: 
+  - question: What is the default join ?
+    answers: 0
+    options:
+      - inner join
+      - outer join
+      - left join
+      - right join
+  - question: Which of the following keywords is used for inner join ?
+    answers:
+      - 0
+      - 1
+    options:
+      - inner join
+      - join
+      - outer join
+      - left join
+      - right join
+  - question: Which join excludes record which doesn't match in either tables ?
+    answers: 0
+    options:
+      - Inner join
+      - Outer join
+      - Left join
+      - Right join
+  - question: Which of the following joins does the image represent ?
+    type: MS
+    image: https://javatutorial.net/wp-content/uploads/2018/02/sql-inner-join.png
+    options:
+      - inner join
+      - outer join
+      - left join
+      - right join
+    answers: 0
+  - question: Which keywords are used for a left outer join ?
+    answers: left join
+  - question: Which of the following joins would keep all the left table records even if it doesn't match with any records of the right table ?
+    answers: 0
+    options:
+      - Left outer join
+      - Right outer join
+      - Inner join
+  - question: Which value would be populated on the properties of the a table if it doesn't match with any records of the another table in a join ?
+    answers:
+      - text: "null"
+        modifiers:
+          - IC
+  - question: Which of the following joins does the image represent ?
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/SQL_Join_-_01_A_Left_Join_B.svg/220px-SQL_Join_-_01_A_Left_Join_B.svg.png
+    options:
+      - left join
+      - inner join
+      - outer join
+      - right join
+    answers: 0
+  - question: Which of the following joins would keep all the right table records even if it doesn't match with any records of the left table ?
+    answers: 0
+    options:
+      - Right outer join
+      - Left outer join
+      - Inner join
+  - question: Which of the following joins does the image represent ?
+    type: MS
+    image: https://res.cloudinary.com/practicaldev/image/fetch/s--oqXDCiVc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/27s6kaq3y84zilo959cx.png
+    options:
+      - right join
+      - inner join
+      - outer join
+      - left join
+    answers: 0
+  - question: Which of the following joins would keep all the right and left table records even if they don't have any match with the records of the opposite table ?
+    answers: 0
+    options:
+      - Full join
+      - Right outer join
+      - Left outer join
+      - Inner join
